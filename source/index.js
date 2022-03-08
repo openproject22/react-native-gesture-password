@@ -88,7 +88,7 @@ export default class GesturePassword extends Component {
         status={status}
         message={this.state.message || message}
         wrongColor={wrongColor}
-        rightColor={rightColor}
+        normalColor={normalColor}
         panHandlers={this._panResponder.panHandlers}
         userAddedChildren={children}
       >
@@ -320,12 +320,12 @@ const Container = memo(
     status,
     message,
     wrongColor,
-    rightColor,
     panHandlers,
     children,
     userAddedChildren,
+    normalColor
   }) => {
-    let color = status === "wrong" ? wrongColor : rightColor;
+    let color = status === "wrong" ? wrongColor : normalColor;
 
     const _styleContainer = useMemo(() => [styles.frame, style], [style]);
 
