@@ -96,7 +96,6 @@ export default class GesturePassword extends Component {
           circles={this.state.circles}
           status={status}
           normalColor={normalColor}
-          wrongColor={wrongColor}
           rightColor={rightColor}
           innerCircle={innerCircle}
           outerCircle={outerCircle}
@@ -366,7 +365,6 @@ const Circles = memo(
     circles,
     status,
     normalColor,
-    wrongColor,
     rightColor,
     innerCircle,
     outerCircle,
@@ -375,7 +373,7 @@ const Circles = memo(
 
     return circles.map(function(c, i) {
       fill = c.isActive;
-      color = status === "wrong" ? wrongColor : rightColor;
+      color = rightColor;
       inner = !!innerCircle;
       outer = !!outerCircle;
 
