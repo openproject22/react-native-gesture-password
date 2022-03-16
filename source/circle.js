@@ -53,10 +53,10 @@ const styles = StyleSheet.create({
   outer: {
     position: "absolute",
     borderColor: "#8E91A8",
-    borderWidth: 1,
+    borderWidth: 2,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#010101",
+    backgroundColor: "#1e1e1e",
   },
   inner: {
     backgroundColor: "#8E91A8",
